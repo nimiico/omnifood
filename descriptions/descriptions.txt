@@ -1,0 +1,74 @@
+## Project example
+
+### BORDER
+- box-shadow: inset 0 0 0 3px #fff; # trick to add border inside
+- border-bottom: 1px solid transparent; # border bottem is more beautiful yhan text decoration and transparent means colored to the parent color
+
+### ANIMATION
+- transform functions
+- transition: all 0.3s; # animation that all means background-color and color you can also choose one of them and 0.3s means period of time
+- transform: translate(2rem, 2rem); # when put this in hover it's move in the direction X, Y when you hover mouse on it and for better animation change box shadows 
+transform: scale(1.1); # 1.1 times bigger
+overflow: hidden; # doesn't permission to element get bigger than default size (use in parents usually) for example when we use 'transform: scale()' the element overflow the size of it and we can hidden it.
+
+### RESPONSIVE DESIGN
+- max-width: 1000px; # when the web page be more than 1000 the element size will be 1000px, but when the window get less than 1000px the element adapt with that.
+- set rem -> at first we must set the font-size in html selector to 62.5% (because of deafult font-size in browser is 16px = 1 and we convert it to 10px for easy calculate. also if the deafult vlue(16px)  was another value our page become responsive (because of the percentage) when we set it to 62.5%, rem become 10px. then we use rem instead of px.
+
+### GRID
+- grid-template-columns: repeat(2, 1fr); # grid-template-columns: 1fr 1fr
+
+### Width
+- hero section is better to wider
+- uppercase and some space between
+- .container {
+  max-width: 120rem;
+  padding: 0 3.2rem;  # flexible container
+  margin: 0 auto;
+}
+
+- padding-bottom: 60%; # 60% of parrent's width
+
+### POSITION
+- z-index: -1; put more behind
+z-index: -2; # more behind
+
+### IMAGE
+- filter: functions; # filtering and editing
+- opacity: 50%; # visiblity view
+- background-image: linear-gradient(to right bottom, red, #e67e22); # change color from red to orange, start at the left top
+- background-position: center; # shoo center of your image if the parent size is smaller than image size
+- <div
+      class="cta-img-box r"
+      role="img"                        # define div as image element without using img element
+      aria-label="Woman enjoying food"
+></div>
+
+### PSUDO CLASS
+- .grid:not(:last-child) {  
+  margin-bottom: 9.6rem;   # not psudo class
+}
+
+### HTML CODE
+- <main></main> # main content of the page, out side of the main be somthing like headers that same in different page of our website or footer
+- <form></form> # a box that input element, put into it.
+- <input type=""> # input element
+- <form class="cta-form" action="#"></form> # action is for address of place that we want send data
+- <label for="full-name">Full Name</label>   # label of bottom input and for is for connect label to input
+    <input id="full-name" type="text" placeholder="Nima Eslami"> # tint text in input
+- <label for="select-where">Where did you hear frgit config --global --add safe.directory /mnt/D4F26588F2657022/projects/html-css-projects/omnifoodom us?</label>
+   <select id="select-where"> #selection element
+     <option value="">Please choose one option:</option> # option of selection, value is value that it return 
+     <option value="friends">Friends and family</option>
+   </select>
+- <input type="" required> # you must fill input and if you do not that it shows you some error
+- it is better to put the input, select, ... in div element to group them
+- <a href="tel:415-201-6370">415-201-6370</a> # go to call app
+- <a href="mailto:hello@omnifood.com">hello@omnifood.com</a> # for mail go to mail app
+- <br /> # get element to next line in html coding
+
+### FORMS
+- font-family: inherit; # inherit font family of parents because inputs or buttons font family don't get font family that we set in body automatically 
+- color: inherit; # also for color
+- outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5)   #set outline for knowing that where are you (it can be use every where)
