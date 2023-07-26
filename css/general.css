@@ -34,6 +34,7 @@ SPACING SYSTEM (px)
 html {
   /* percentage of user's browser  font size settings */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -41,6 +42,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
 }
 /************************************/
 /* GENERAL COMPONENTS */
@@ -121,7 +125,7 @@ body {
   letter-spacing: 0.75px;
 }
 
-.btn, 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -130,13 +134,10 @@ body {
   font-weight: 600;
   text-decoration: none;
 
-
   padding: 1.6rem 3.2rem;
   border-radius: 0.9rem;
   transition: all 0.3s;
   transition: all 0.3s;
-
-
 
   /* only necessary for .btn */
   border: none;
@@ -209,6 +210,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
@@ -222,9 +224,8 @@ body {
   /* outline: 4px dotted #e67e22;
   outline-offset: 8px; */
 
-  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5)
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
-
 
 /* HELPER CLASSES */
 

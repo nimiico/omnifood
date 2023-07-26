@@ -8,8 +8,12 @@
 - transform functions
 - transition: all 0.3s; # animation that all means background-color and color you can also choose one of them and 0.3s means period of time
 - transform: translate(2rem, 2rem); # when put this in hover it's move in the direction X, Y when you hover mouse on it and for better animation change box shadows 
-transform: scale(1.1); # 1.1 times bigger
-overflow: hidden; # doesn't permission to element get bigger than default size (use in parents usually) for example when we use 'transform: scale()' the element overflow the size of it and we can hidden it.
+- transform: scale(1.1); # 1.1 times bigger
+- overflow: hidden; # doesn't permission to element get bigger than default size (use in parents usually) for example when we use 'transform: scale()' the element overflow the size of it and we can hidden it.
+- overflow-x: hidden; # hidden overflows that are in x axis
+- transform: translateX(100%);
+- transform: translateX(0); # transform is smooth in animations so use it when you want shift element 
+- - transition: all 0.3s east-in; # at first move slow and then go fast (east-in-out # fast first and end and slow middle)
 
 ### RESPONSIVE DESIGN
 - max-width: 1000px; # when the web page be more than 1000 the element size will be 1000px, but when the window get less than 1000px the element adapt with that.
